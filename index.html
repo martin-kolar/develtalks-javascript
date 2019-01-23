@@ -10,16 +10,16 @@
 		</script>
 	</head>
 	<body>
+		<div id="element1" class="element">element1</div>
+		<div id="element2" class="element">element2</div>
+		<div id="element3" class="element">element3</div>
+		<div id="element4" class="element">element4</div>
+
+		<div id="target-jquery"></div>
+		<div id="target-vanilla"></div>
 
 		<script>
-			load(['firstScript']);
-			load({
-				name: 'secondScript',
-				options: {
-					param1: 1,
-					param2: 2,
-				}
-			});
+			load(['secondScript']);
 		</script>
 		<script src="/js/app.js" async></script>
 	</body>
