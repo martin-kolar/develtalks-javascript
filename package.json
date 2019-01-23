@@ -1,0 +1,30 @@
+{
+  "name": "DevelTalksJsSample",
+  "version": "1.0.0",
+  "description": "JavaScript sample for stream develtalks",
+  "main": "gulpfile.js",
+  "directories": {},
+  "scripts": {
+    "prebuild": "npm run cleanup",
+    "build": "webpack --config configs/webpack.config.js",
+    "dev": "webpack-dev-server --config configs/webpack.config.js",
+    "cleanup": "rimraf ./js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:martin-kolar/develtalks-javascript.git"
+  },
+  "author": "Martin Kolar @ koderik",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "core-js": "^2.6.3",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
